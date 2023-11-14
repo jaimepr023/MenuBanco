@@ -142,7 +142,8 @@ namespace ClasesYListas
                         cerrarMenu = true;
                         break;
                     case 1:
-                        
+                        oi.darAlta(listaCliente);
+                       
                         break;
                     case 2:
                         Console.WriteLine("A continuacion se podra dar de alta");

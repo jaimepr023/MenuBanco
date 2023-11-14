@@ -30,8 +30,6 @@ namespace ClasesYListas.Servicios
             
         }
 
-         
-
         public void darAlta(List<ClienteDto> listaAntigua)
         {
 
