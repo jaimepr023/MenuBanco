@@ -128,6 +128,8 @@ namespace ClasesYListas
             MenuInterfaz mi = new MenuImplementacion();
             operacionesInterfaz oi = new operacionesImplementacion();
             List<ClienteDto> listaCliente= new List<ClienteDto>();
+            
+
             mi.mensajeBienvenida();
             int opcionUsuario;
             bool cerrarMenu=false;
@@ -138,15 +140,15 @@ namespace ClasesYListas
                 switch (opcionUsuario)
                 {
                     case 0:
-                        Console.WriteLine("A continuacion se cerrara el menu.Que tenga un buen dia");
+                        Console.WriteLine("[INFOS]- A continuacion se cerrara el menu.Que tenga un buen dia");
                         cerrarMenu = true;
                         break;
                     case 1:
+                        Console.WriteLine("[INFOS]- A continuacion se podra dar de alta\n");
                         oi.darAlta(listaCliente);
-                       
                         break;
                     case 2:
-                        Console.WriteLine("A continuacion se podra dar de alta");
+                        Console.WriteLine("[INFOS]- A continuacion se podra dar de baja");
                         string afirmacion = mi.afirmacion();
                         if (afirmacion == "si")
                         {
@@ -154,16 +156,17 @@ namespace ClasesYListas
                         }
                         else
                         {
+                            Console.WriteLine("Gracias por su operacion.\n");
                             break;
                         }
 
                         break; 
                     case 3:
-                        Console.WriteLine("Aqui podra interactuar con su cuenta");
-                        Console.WriteLine("Por desgracia esta accion esta inhabilitada temporalmente, muchas gracias");
+                        Console.WriteLine("[INFOS]- Aqui podra interactuar con su cuenta");
+                        Console.WriteLine("[INFOS]- Por desgracia esta accion esta inhabilitada temporalmente, muchas gracias\n");
                         break;
                     default:
-                        Console.WriteLine("[INFOS]-Error en la operacion elegida por favor elija una opcion correctamente");
+                        Console.WriteLine("[INFOS]-Error en la operacion elegida por favor elija una opcion correctamente\n");
                         break;
 
                 }

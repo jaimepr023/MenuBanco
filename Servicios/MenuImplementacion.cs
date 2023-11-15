@@ -19,14 +19,14 @@ namespace ClasesYListas.Servicios
         public void mensajeBienvenida()
         {
             string afirmacion;
-            Console.WriteLine("Bienvenido/a, al banco de españa");
+            Console.WriteLine("Bienvenido/a, al banco de españa.\n");
             
         }
 
         public int menu()
         {
             int opcionseleccionada;
-            Console.WriteLine("Elija la opcion que usted quiera:\n");
+            Console.WriteLine("Elija la opcion que usted quiera:");
             Console.WriteLine("·····································");
             Console.WriteLine("Opcion 0. Cerrar menu");
             Console.WriteLine("Opcion 1. Darse de alta");

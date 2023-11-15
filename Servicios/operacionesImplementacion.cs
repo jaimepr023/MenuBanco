@@ -12,6 +12,8 @@ namespace ClasesYListas.Servicios
     {
        private ClienteDto crearCliente()
         {
+            Console.WriteLine("Dame tu ID");
+            long IDCliente = Int64.Parse(Console.ReadLine());
             Console.WriteLine("Dame tu nombre");
             string nombre = Console.ReadLine();
             Console.WriteLine("Dame tu apellido completo");
@@ -24,8 +26,10 @@ namespace ClasesYListas.Servicios
             string fechaAlta = Console.ReadLine();
             Console.WriteLine("Dame tu fecha de nacimiento");
             string fecha = Console.ReadLine();
+            
 
-            ClienteDto clientenuevo = new ClienteDto(nombre,apellido,DNI,fecha,email,fechaAlta);
+
+            ClienteDto clientenuevo = new ClienteDto(IDCliente,nombre,apellido,DNI,fecha,email,fechaAlta);
             return clientenuevo;
             
         }
@@ -35,16 +39,9 @@ namespace ClasesYListas.Servicios
 
             ClienteDto nuevocliente = crearCliente();
             listaAntigua.Add(nuevocliente);
+            Console.WriteLine(nuevocliente.ToString());
         }
 
-       
-           
         
-
-       
-
-      
-
-
     }
 }
