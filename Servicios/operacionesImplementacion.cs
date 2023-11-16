@@ -8,9 +8,18 @@ using System.Xml.Serialization;
 
 namespace ClasesYListas.Servicios
 {
+    /// <summary>
+    /// Implementacion que nos implementa los metodos operadores
+    /// <author>jpr-16/11/23</author>
+    /// </summary>
     internal class operacionesImplementacion : operacionesInterfaz
     {
-       private ClienteDto crearCliente()
+        /// <summary>
+        /// metodo privado que nos devuelbe las caracteristicas de nuestro nuevo cliente
+        /// <author>jpr-16/11/23</author>
+        /// </summary>
+        /// <returns></returns>
+        private ClienteDto crearCliente()
         {
             Console.WriteLine("Dame tu ID");
             long IDCliente = Int64.Parse(Console.ReadLine());

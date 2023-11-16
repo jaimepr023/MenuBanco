@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace ClasesYListas.Dtos
 {
+    /// <summary>
+    /// Clase de las caracteristicas de nuestros clientes
+    /// <author>jpr-16/11/23</author>
+    /// </summary>
     internal class ClienteDto
     {
         //Atributos(caracteristicas del ente) 
@@ -28,6 +32,10 @@ namespace ClasesYListas.Dtos
         string fechadebaja;
 
         //Metodos GetySet
+        /// <summary>
+        /// Metodos get y set de nuestros atributos 
+        /// <author>jpr-16/11/23</author>
+        /// </summary>
         public string NombreCliente { get => nombreCliente; set => nombreCliente = value; }
         public string ApellidosCliente { get => apellidosCliente; set => apellidosCliente = value; }
         public string DniCliente { get => dniCliente; set => dniCliente = value; }
@@ -38,6 +46,7 @@ namespace ClasesYListas.Dtos
         public long IdCliente { get => idCliente; set => idCliente = value; }
 
        //Constructores(metodods que tiene una clase para hacer el new.(TODA TIENE UN CONSTRUCTOR POR DEFECTO)
+
         public ClienteDto(long idCliente,string nombreCliente, string apellidosCliente, string dniCliente, string fechaDeNacimientpCliente, string emailCliente, string fechaAltaCliente)
         {
             this.idCliente = IdCliente;
@@ -57,6 +66,7 @@ namespace ClasesYListas.Dtos
         }
 
         override
+            
         public string ToString()
         {
             Console.WriteLine("Tus datos personales se quedan guardados en nuesta base de datos. Y son los siguientes:\n");

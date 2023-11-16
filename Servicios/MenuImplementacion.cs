@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace ClasesYListas.Servicios
 {
+    /// <summary>
+    /// implementacion que implementa a su interfaz 
+    /// <author>jpr-16/11/23</author>
+    /// </summary>
     internal class MenuImplementacion : MenuInterfaz
     {
         public string afirmacion()
         {
-            Console.WriteLine("¿Estas seguro que quieres darte de baja?. Elija la opcion si para continuaor, de lo contrario especifique la opcion no");
+            Console.WriteLine("¿Estas seguro que quieres darte de baja?. Elija la opcion si para continuar, de lo contrario especifique la opcion no");
             string afirmacion = Console.ReadLine();
             return afirmacion;
         }

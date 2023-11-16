@@ -3,8 +3,17 @@ using ClasesYListas.Servicios;
 
 namespace ClasesYListas
 {
+    /// <summary>
+    /// clase principal donde se encuentra el procedimiento de nuestra aplicacion 
+    /// <author>jpr-16/11/23</author>
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// metodod inicial donde se encuentra el procedimiento 
+        /// <author>jpr-16/11/23</author>
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             /*Para que esto funciones poner en public los atributos de ClienteDto
